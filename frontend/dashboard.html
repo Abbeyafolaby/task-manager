@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Task Manager - Dashboard</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<h1>📋 Task Manager</h1>
+			<div class="header-actions">
+				<span id="welcome"></span>
+				<button id="logoutBtn">Sign Out</button>
+			</div>
+		</header>
+		
+		<section class="new-task">
+			<div class="card">
+				<h2>➕ Create New Task</h2>
+				<form id="taskForm">
+					<input type="text" id="title" placeholder="What needs to be done?" required />
+					<input type="text" id="description" placeholder="Add a description (optional)" />
+					<select id="priority">
+						<option value="Low">🟢 Low Priority</option>
+						<option value="Medium">🟡 Medium Priority</option>
+						<option value="High">🔴 High Priority</option>
+					</select>
+					<button type="submit">Create Task</button>
+				</form>
+			</div>
+		</section>
+		
+		<section>
+			<h2>📝 Your Tasks</h2>
+			<ul id="tasks" class="tasks"></ul>
+		</section>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
+
+
